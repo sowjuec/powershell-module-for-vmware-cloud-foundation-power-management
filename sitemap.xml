@@ -31,41 +31,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/install/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/known-issues/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/limitations/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/troubleshooting/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/update/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/usage/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/user-access/</loc>
-         <lastmod>2023-06-23</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/functions/Get-DrsAutomationLevel/</loc>
          <lastmod>2023-06-23</lastmod>
          <changefreq>daily</changefreq>
@@ -182,6 +147,41 @@
     </url>
     <url>
          <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/functions/Wait-ForStableNsxtClusterStatus/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/install/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/known-issues/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/limitations/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/troubleshooting/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/update/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/usage/</loc>
+         <lastmod>2023-06-23</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/getting-started/user-access/</loc>
          <lastmod>2023-06-23</lastmod>
          <changefreq>daily</changefreq>
     </url>
