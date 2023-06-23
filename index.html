@@ -1144,12 +1144,73 @@
     Requirements
   </a>
   
+    <nav class="md-nav" aria-label="Requirements">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#platforms" class="md-nav__link">
+    Platforms
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#operating-systems" class="md-nav__link">
+    Operating Systems
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#powershell" class="md-nav__link">
+    PowerShell
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#module-dependencies" class="md-nav__link">
+    Module Dependencies
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
   <a href="#usage-guide" class="md-nav__link">
     Usage Guide
   </a>
+  
+    <nav class="md-nav" aria-label="Usage Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#sample-scripts" class="md-nav__link">
+    Sample Scripts
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1191,178 +1252,242 @@
 <p><code>VMware.CloudFoundation.PowerManagement</code> s a PowerShell module that supports the ability to automate the shut down and start up of the <a href="https://docs.vmware.com/en/VMware-Cloud-Foundation/index.html">VMware Cloud Foundatiоn</a>  management domain or VI workload domains using aPowerShell script.</p>
 <p><a class="md-button md-button--primary" href="https://www.powershellgallery.com/packages/VMware.CloudFoundation.PowerManagement"><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4h16.09m-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44-6.53 4.6Z"/></svg></span> &nbsp; PowerShell Gallery</a></p>
 <h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>### Platforms
-
-The following table lists the supported platforms for this module.
-
-Platform                                                     | Support
--------------------------------------------------------------|------------------------------------
-:fontawesome-solid-cloud: &amp;nbsp; VMware Cloud Foundation 5.0.x on vSAN ReadyNodes | :fontawesome-solid-check:{ .green }
-:fontawesome-solid-cloud: &amp;nbsp; VMware Cloud Foundation 4.5.x on vSAN ReadyNodes | :fontawesome-solid-check:{ .green }
-:fontawesome-solid-cloud: &amp;nbsp; VMware Cloud Foundation 4.4.x on vSAN ReadyNodes | :fontawesome-solid-check:{ .green }
-:fontawesome-solid-cloud: &amp;nbsp; VMware Cloud Foundation 4.3.x on vSAN ReadyNodes | :fontawesome-solid-check:{ .green }
-
-!!! Note
-
-    VMware Cloud Foundation on Dell EMC VxRail is not supported.
-
-### Operating Systems
-
-The following table lists the supported operating systems for this module.
-
-Operating System                                                       | Version
------------------------------------------------------------------------|-----------
-:fontawesome-brands-windows: &amp;nbsp; Microsoft Windows Server           | 2019, 2022
-:fontawesome-brands-windows: &amp;nbsp; Microsoft Windows                  | 10, 11
-
-### PowerShell
-
-The following table lists the supported editions and versions of PowerShell for this module.
-
-Edition                                                                           | Version
-----------------------------------------------------------------------------------|----------
-:material-powershell: &amp;nbsp; [PowerShell Core][microsoft-powershell]              | &gt;= 7.2.4
-
-### Module Dependencies
-
-The following table lists the required PowerShell module dependencies for this module.
-
-PowerShell Module                                    | Version   | Publisher    | Reference
------------------------------------------------------|-----------|--------------|---------------------------------------------------------------------------
-[VMware.PowerCLI][psgallery-module-powercli]         | &gt;= 13.0.0 | VMware, Inc. | :fontawesome-solid-book: &amp;nbsp; [Documentation][developer-module-powercli]
-[PowerVCF][psgallery-module-powervcf]                | &gt;= 2.3.0  | VMware, Inc. | :fontawesome-brands-github: &amp;nbsp; [GitHub][github-module-powervcf]
-[PowerValidatedSolutions][psgallery-module-pvs]      | &gt;= 2.4.0  | VMware, Inc. | :fontawesome-brands-github: &amp;nbsp; [GitHub][github-module-pvs]
-</code></pre></div>
+<h3 id="platforms">Platforms<a class="headerlink" href="#platforms" title="Permanent link">&para;</a></h3>
+<p>The following table lists the supported platforms for this module.</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Support</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4 4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336z"/></svg></span> &nbsp; VMware Cloud Foundation 5.0.x on vSAN ReadyNodes</td>
+<td><span class="twemoji green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4 4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336z"/></svg></span> &nbsp; VMware Cloud Foundation 4.5.x on vSAN ReadyNodes</td>
+<td><span class="twemoji green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4 4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336z"/></svg></span> &nbsp; VMware Cloud Foundation 4.4.x on vSAN ReadyNodes</td>
+<td><span class="twemoji green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M0 336c0 79.5 64.5 144 144 144h368c70.7 0 128-57.3 128-128 0-61.9-44-113.6-102.4-125.4 4.1-10.7 6.4-22.4 6.4-34.6 0-53-43-96-96-96-19.7 0-38.1 6-53.3 16.2C367 64.2 315.3 32 256 32c-88.4 0-160 71.6-160 160 0 2.7.1 5.4.2 8.1C40.2 219.8 0 273.2 0 336z"/></svg></span> &nbsp; VMware Cloud Foundation 4.3.x on vSAN ReadyNodes</td>
+<td><span class="twemoji green"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7l233.4-233.3c12.5-12.5 32.8-12.5 45.3 0z"/></svg></span></td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>VMware Cloud Foundation on Dell EMC VxRail is not supported.</p>
+</div>
+<h3 id="operating-systems">Operating Systems<a class="headerlink" href="#operating-systems" title="Permanent link">&para;</a></h3>
+<p>The following table lists the supported operating systems for this module.</p>
+<table>
+<thead>
+<tr>
+<th>Operating System</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m0 93.7 183.6-25.3v177.4H0V93.7zm0 324.6 183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg></span> &nbsp; Microsoft Windows Server</td>
+<td>2019, 2022</td>
+</tr>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="m0 93.7 183.6-25.3v177.4H0V93.7zm0 324.6 183.6 25.3V268.4H0v149.9zm203.8 28L448 480V268.4H203.8v177.9zm0-380.6v180.1H448V32L203.8 65.7z"/></svg></span> &nbsp; Microsoft Windows</td>
+<td>10, 11</td>
+</tr>
+</tbody>
+</table>
+<h3 id="powershell">PowerShell<a class="headerlink" href="#powershell" title="Permanent link">&para;</a></h3>
+<p>The following table lists the supported editions and versions of PowerShell for this module.</p>
+<table>
+<thead>
+<tr>
+<th>Edition</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21.83 4c.49 0 .8.4.67.89l-3.16 14.22c-.11.49-.59.89-1.08.89H2.17c-.49 0-.8-.4-.67-.89L4.66 4.89C4.77 4.4 5.25 4 5.74 4h16.09m-6 12h-4c-.46 0-.83.38-.83.84 0 .47.37.85.83.85h4c.47 0 .85-.38.85-.85 0-.46-.38-.84-.85-.84m-10.05.28a.87.87 0 0 0-.21 1.22c.28.42.84.5 1.24.23 7.35-5.17 7.4-5.23 7.45-5.26.18-.16.27-.38.28-.6.01-.2-.04-.37-.16-.56L9.46 6.03A.867.867 0 0 0 8.21 6c-.36.32-.38.88-.05 1.24l4.15 4.44-6.53 4.6Z"/></svg></span> &nbsp; <a href="https://docs.microsoft.com/en-us/powershell">PowerShell Core</a></td>
+<td>&gt;= 7.2.4</td>
+</tr>
+</tbody>
+</table>
+<h3 id="module-dependencies">Module Dependencies<a class="headerlink" href="#module-dependencies" title="Permanent link">&para;</a></h3>
+<p>The following table lists the required PowerShell module dependencies for this module.</p>
+<table>
+<thead>
+<tr>
+<th>PowerShell Module</th>
+<th>Version</th>
+<th>Publisher</th>
+<th>Reference</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.powershellgallery.com/packages/VMware.PowerCLI">VMware.PowerCLI</a></td>
+<td>&gt;= 13.0.0</td>
+<td>VMware, Inc.</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M96 0C43 0 0 43 0 96v320c0 53 43 96 96 96h320c17.7 0 32-14.3 32-32s-14.3-32-32-32v-64c17.7 0 32-14.3 32-32V32c0-17.7-14.3-32-32-32H96zm0 384h256v64H96c-17.7 0-32-14.3-32-32s14.3-32 32-32zm32-240c0-8.8 7.2-16 16-16h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16zm16 48h192c8.8 0 16 7.2 16 16s-7.2 16-16 16H144c-8.8 0-16-7.2-16-16s7.2-16 16-16z"/></svg></span> &nbsp; <a href="https://developer.vmware.com/tool/vmware-powercli">Documentation</a></td>
+</tr>
+<tr>
+<td><a href="https://www.powershellgallery.com/packages/PowerVCF">PowerVCF</a></td>
+<td>&gt;= 2.3.0</td>
+<td>VMware, Inc.</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span> &nbsp; <a href="https://github.com/vmware/powershell-module-for-vmware-cloud-foundation">GitHub</a></td>
+</tr>
+<tr>
+<td><a href="https://www.powershellgallery.com/packages/PowerValidatedSolutions">PowerValidatedSolutions</a></td>
+<td>&gt;= 2.4.0</td>
+<td>VMware, Inc.</td>
+<td><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg></span> &nbsp; <a href="https://github.com/vmware-samples/power-validated-solutions-for-cloud-foundation">GitHub</a></td>
+</tr>
+</tbody>
+</table>
 <h2 id="usage-guide">Usage Guide<a class="headerlink" href="#usage-guide" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>### Sample Scripts
-
-- `PowerManagement-ManagementDomain.ps1` - shutdown or startup all software components in the management domain.
-
-    !!! Note
-
-        The script does not support shutdown of vRealize Suite. Shut down the vRealize Suite components in your environment manually before running the script.
-
-- `PowerManagement-WorkloadDomain.ps1` - Shut down or start up the management components for a workload domain.
-
-    !!! Note
-
-        The script does not support vSphere with Tanzu.
-
-### Prerequisites
-
-- Add forward and reverse DNS records for the client machine running the scripts.
-
-- Verify that SDDC Manager is powered on and operational.
-
-- Before you shut down the management domain, get the credentials for the management domain ESXi hosts and vCenter Server instance from SDDC Manager and save them for troubleshooting or a subsequent manual startup. Because SDDC Manager is powered off during each of these operations, you must save the credentials in advance.
-
-To get the credentials, log in to the SDDC Manager appliance by using a Secure Shell (SSH) client as `vcf` and run the `lookup_passwords` command.
-
-If using Windows 10, configure the PowerShell execution policy with the permissions required to run the commands.
-
-- Run the following command to get the active execution policy:
-
-    ```powershell
-    Execute Get-ExecutionPolicy
-    ```
-
-- If the command returns `Restricted`, run the following command:
-
-    ```powershell
-    Set-ExecutionPolicy RemoteSigned
-    ```
-
-- If the target system uses self-signed or untrusted certificates, configure PowerCLI to ignore.
-
-    ```powershell
-    Set-PowerCLIConfiguration -InvalidCertificateAction Ignore -Confirm:$false
-    ```
-
-### Usage Examples
-
-!!! Note
-
-    More usage examples are available in the scripts.
-
-1. Enable SSH on the ESXi hosts (required for VMware Cloud Foundation before version 4.5) in the workload domain by using the SoS utility of the SDDC Manager appliance.
-
-    - Log in to the SDDC Manager appliance by using a Secure Shell (SSH) client as `vcf`.
-
-    - Switch to the `root` user by running the `su` command and entering the `root` password.
-
-    - Run the following command:
-
-        ```bash
-        /opt/vmware/sddc-support/sos --enable-ssh-esxi --domain domain-name
-        ```
-
-2. On the Windows machine that is allocated to run the scripts, start Windows PowerShell 7.x.
-
-3. Locate the path of the `VMware.CloudFoundation.PowerManagement` module by running the following PowerShell command:
-
-    ```powershell
-    (Get-Module -ListAvailable VMware.CloudFoundation.PowerManagement*).path
-    ```
-
-    For example, the full path to the module may resemble:
-
-    ```powershell
-    C:\Program Files\WindowsPowerShell\Modules\VMware.CloudFoundation.PowerManagement\1.0.0.1000\VMware.CloudFoundation.PowerManagement.psd1
-    ```
-
-4. Go to the `SampleScripts` folder that is located in the same folder as the
-`VMware.CloudFoundation.PowerManagement.psd1` file.
-
-5. To shut down or start up a VI workload domain, perform these steps.
-
-    - Replace the values in the sample variables with values from your environment and run the following commands in the PowerShell console:
-
-        ```powershell
-        $sddcManagerFqdn = &quot;sfo-vcf01.sfo.rainpole.io&quot;
-
-        $sddcManagerUser = &quot;administrator@vsphere.local&quot;
-
-        $sddcManagerPass = &quot;VMw@re1!&quot;
-
-        $sddcDomain = &quot;sfo-w01&quot;
-        ```
-
-    - Run the `PowerManagement-WorkloadDomain.ps1` script:
-
-        ```powershell
-        ./PowerManagement-WorkloadDomain.ps1 -server $sddcManagerFqdn -user $sddcManagerUser -pass $sddcManagerPass -sddcDomain $sddcDomain -shutdown -shutdownCustomerVm
-        ```
-
-    When you use the `-shutdownCustomerVm` parameter, the virtual machines are shut down as the first step of the process.
-
-6. To shut down or start up the management domain, perform these steps.
-
-    - Replace the values in the sample variables with values from your environment and run the following commands in the PowerShell console:
-
-        ```powershell
-        $sddcManagerFqdn = &quot;sfo-vcf01.sfo.rainpole.io&quot;
-
-        $sddcManagerUser = &quot;administrator@vsphere.local&quot;
-
-        $sddcManagerPass = &quot;VMw@re1!&quot;
-        ```
-
-    - Run the `PowerManagement-ManagementDomain.ps1` script:
-
-        ```powershell
-        ./PowerManagement-ManagementDomain.ps1 -server $sddcManagerFqdn -user $sddcManagerUser -pass $sddcManagerPass -shutdown
-
-        ./PowerManagement-ManagementDomain.ps1 -startup
-        ```
-
-    During the shutdown operation, the script generates a `ManagementStartupInput.json` file in the current directory. The script then uses the file for the subsequent startup of the management domain.
-
-    Because the script overwrites the JSON file every time you run it, if you are shutting down multiple management domains, rename the file before shutting down the next domain.
-
-    !!! Warning
-
-        Although the credentials in the JSON file are encrypted, treat the content of this file as sensitive data.
+<h3 id="sample-scripts">Sample Scripts<a class="headerlink" href="#sample-scripts" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><code>PowerManagement-ManagementDomain.ps1</code> - shutdown or startup all software components in the management domain.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The script does not support shutdown of vRealize Suite. Shut down the vRealize Suite components in your environment manually before running the script.</p>
+</div>
+</li>
+<li>
+<p><code>PowerManagement-WorkloadDomain.ps1</code> - Shut down or start up the management components for a workload domain.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The script does not support vSphere with Tanzu.</p>
+</div>
+</li>
+</ul>
+<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p>Add forward and reverse DNS records for the client machine running the scripts.</p>
+</li>
+<li>
+<p>Verify that SDDC Manager is powered on and operational.</p>
+</li>
+<li>
+<p>Before you shut down the management domain, get the credentials for the management domain ESXi hosts and vCenter Server instance from SDDC Manager and save them for troubleshooting or a subsequent manual startup. Because SDDC Manager is powered off during each of these operations, you must save the credentials in advance.</p>
+</li>
+</ul>
+<p>To get the credentials, log in to the SDDC Manager appliance by using a Secure Shell (SSH) client as <code>vcf</code> and run the <code>lookup_passwords</code> command.</p>
+<p>If using Windows 10, configure the PowerShell execution policy with the permissions required to run the commands.</p>
+<ul>
+<li>
+<p>Run the following command to get the active execution policy:</p>
+<div class="highlight"><pre><span></span><code><span class="n">Execute</span> <span class="nb">Get-ExecutionPolicy</span>
 </code></pre></div>
+</li>
+<li>
+<p>If the command returns <code>Restricted</code>, run the following command:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-ExecutionPolicy</span> <span class="n">RemoteSigned</span>
+</code></pre></div>
+</li>
+<li>
+<p>If the target system uses self-signed or untrusted certificates, configure PowerCLI to ignore.</p>
+<div class="highlight"><pre><span></span><code><span class="nb">Set-PowerCLIConfiguration</span> <span class="n">-InvalidCertificateAction</span> <span class="n">Ignore</span> <span class="n">-Confirm</span><span class="p">:</span><span class="nv">$false</span>
+</code></pre></div>
+</li>
+</ul>
+<h3 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>More usage examples are available in the scripts.</p>
+</div>
+<ol>
+<li>
+<p>Enable SSH on the ESXi hosts (required for VMware Cloud Foundation before version 4.5) in the workload domain by using the SoS utility of the SDDC Manager appliance.</p>
+<ul>
+<li>
+<p>Log in to the SDDC Manager appliance by using a Secure Shell (SSH) client as <code>vcf</code>.</p>
+</li>
+<li>
+<p>Switch to the <code>root</code> user by running the <code>su</code> command and entering the <code>root</code> password.</p>
+</li>
+<li>
+<p>Run the following command:</p>
+<div class="highlight"><pre><span></span><code>/opt/vmware/sddc-support/sos<span class="w"> </span>--enable-ssh-esxi<span class="w"> </span>--domain<span class="w"> </span>domain-name
+</code></pre></div>
+</li>
+</ul>
+</li>
+<li>
+<p>On the Windows machine that is allocated to run the scripts, start Windows PowerShell 7.x.</p>
+</li>
+<li>
+<p>Locate the path of the <code>VMware.CloudFoundation.PowerManagement</code> module by running the following PowerShell command:</p>
+<div class="highlight"><pre><span></span><code><span class="p">(</span><span class="nb">Get-Module</span> <span class="n">-ListAvailable</span> <span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">PowerManagement</span><span class="p">*).</span><span class="n">path</span>
+</code></pre></div>
+<p>For example, the full path to the module may resemble:</p>
+<div class="highlight"><pre><span></span><code><span class="n">C</span><span class="p">:\</span><span class="n">Program</span> <span class="n">Files</span><span class="p">\</span><span class="n">WindowsPowerShell</span><span class="p">\</span><span class="n">Modules</span><span class="p">\</span><span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">PowerManagement</span><span class="p">\</span><span class="n">1</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">1000</span><span class="p">\</span><span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">PowerManagement</span><span class="p">.</span><span class="n">psd1</span>
+</code></pre></div>
+</li>
+<li>
+<p>Go to the <code>SampleScripts</code> folder that is located in the same folder as the
+<code>VMware.CloudFoundation.PowerManagement.psd1</code> file.</p>
+</li>
+<li>
+<p>To shut down or start up a VI workload domain, perform these steps.</p>
+<ul>
+<li>
+<p>Replace the values in the sample variables with values from your environment and run the following commands in the PowerShell console:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$sddcManagerFqdn</span> <span class="p">=</span> <span class="s2">&quot;sfo-vcf01.sfo.rainpole.io&quot;</span>
+
+<span class="nv">$sddcManagerUser</span> <span class="p">=</span> <span class="s2">&quot;administrator@vsphere.local&quot;</span>
+
+<span class="nv">$sddcManagerPass</span> <span class="p">=</span> <span class="s2">&quot;VMw@re1!&quot;</span>
+
+<span class="nv">$sddcDomain</span> <span class="p">=</span> <span class="s2">&quot;sfo-w01&quot;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Run the <code>PowerManagement-WorkloadDomain.ps1</code> script:</p>
+<div class="highlight"><pre><span></span><code><span class="p">./</span><span class="n">PowerManagement-WorkloadDomain</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-server</span> <span class="nv">$sddcManagerFqdn</span> <span class="n">-user</span> <span class="nv">$sddcManagerUser</span> <span class="n">-pass</span> <span class="nv">$sddcManagerPass</span> <span class="n">-sddcDomain</span> <span class="nv">$sddcDomain</span> <span class="n">-shutdown</span> <span class="n">-shutdownCustomerVm</span>
+</code></pre></div>
+</li>
+</ul>
+<p>When you use the <code>-shutdownCustomerVm</code> parameter, the virtual machines are shut down as the first step of the process.</p>
+</li>
+<li>
+<p>To shut down or start up the management domain, perform these steps.</p>
+<ul>
+<li>
+<p>Replace the values in the sample variables with values from your environment and run the following commands in the PowerShell console:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">$sddcManagerFqdn</span> <span class="p">=</span> <span class="s2">&quot;sfo-vcf01.sfo.rainpole.io&quot;</span>
+
+<span class="nv">$sddcManagerUser</span> <span class="p">=</span> <span class="s2">&quot;administrator@vsphere.local&quot;</span>
+
+<span class="nv">$sddcManagerPass</span> <span class="p">=</span> <span class="s2">&quot;VMw@re1!&quot;</span>
+</code></pre></div>
+</li>
+<li>
+<p>Run the <code>PowerManagement-ManagementDomain.ps1</code> script:</p>
+<div class="highlight"><pre><span></span><code><span class="p">./</span><span class="n">PowerManagement-ManagementDomain</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-server</span> <span class="nv">$sddcManagerFqdn</span> <span class="n">-user</span> <span class="nv">$sddcManagerUser</span> <span class="n">-pass</span> <span class="nv">$sddcManagerPass</span> <span class="n">-shutdown</span>
+
+<span class="p">./</span><span class="n">PowerManagement-ManagementDomain</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-startup</span>
+</code></pre></div>
+</li>
+</ul>
+<p>During the shutdown operation, the script generates a <code>ManagementStartupInput.json</code> file in the current directory. The script then uses the file for the subsequent startup of the management domain.</p>
+<p>Because the script overwrites the JSON file every time you run it, if you are shutting down multiple management domains, rename the file before shutting down the next domain.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Although the credentials in the JSON file are encrypted, treat the content of this file as sensitive data.</p>
+</div>
+</li>
+</ol>
 
 
 
