@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#user-guide" class="md-skip">
+        <a href="#using-the-module" class="md-skip">
           Skip to content
         </a>
       
@@ -467,15 +467,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-scripts" class="md-nav__link">
-    Sample Scripts
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#sample-scripts" class="md-nav__link">
+    Sample Scripts
   </a>
   
 </li>
@@ -1205,15 +1205,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#sample-scripts" class="md-nav__link">
-    Sample Scripts
+  <a href="#prerequisites" class="md-nav__link">
+    Prerequisites
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
+  <a href="#sample-scripts" class="md-nav__link">
+    Sample Scripts
   </a>
   
 </li>
@@ -1256,25 +1256,7 @@
   
 
 
-<h1 id="user-guide">User Guide<a class="headerlink" href="#user-guide" title="Permanent link">&para;</a></h1>
-<h2 id="sample-scripts">Sample Scripts<a class="headerlink" href="#sample-scripts" title="Permanent link">&para;</a></h2>
-<ul>
-<li>
-<p><code>PowerManagement-ManagementDomain.ps1</code> - shutdown or startup all software components in the management domain.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The script does not support shutdown of Aria Suite (formerly vRealize Suite). 
-Shut down the Aria Suite components in your environment before running the script.</p>
-</div>
-</li>
-<li>
-<p><code>PowerManagement-WorkloadDomain.ps1</code> - Shut down or start up the management components for a workload domain.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The script does not support vSphere with Tanzu.</p>
-</div>
-</li>
-</ul>
+<h1 id="using-the-module">Using the Module<a class="headerlink" href="#using-the-module" title="Permanent link">&para;</a></h1>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h2>
 <ul>
 <li>
@@ -1304,6 +1286,24 @@ Shut down the Aria Suite components in your environment before running the scrip
 <p>If the target system uses self-signed or untrusted certificates, configure PowerCLI to ignore.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-PowerCLIConfiguration</span> <span class="n">-InvalidCertificateAction</span> <span class="n">Ignore</span> <span class="n">-Confirm</span><span class="p">:</span><span class="nv">$false</span>
 </code></pre></div>
+</li>
+</ul>
+<h2 id="sample-scripts">Sample Scripts<a class="headerlink" href="#sample-scripts" title="Permanent link">&para;</a></h2>
+<ul>
+<li>
+<p><code>PowerManagement-ManagementDomain.ps1</code> - shutdown or startup all software components in the management domain.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The script does not support shutdown of Aria Suite (formerly vRealize Suite). 
+Shut down the Aria Suite components in your environment before running the script.</p>
+</div>
+</li>
+<li>
+<p><code>PowerManagement-WorkloadDomain.ps1</code> - Shut down or start up the management components for a workload domain.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The script does not support vSphere with Tanzu.</p>
+</div>
 </li>
 </ul>
 <h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
