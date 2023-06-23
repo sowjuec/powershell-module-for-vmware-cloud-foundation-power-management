@@ -1482,10 +1482,10 @@
 </ul>
 <p>During the shutdown operation, the script generates a <code>ManagementStartupInput.json</code> file in the current directory. The script then uses the file for the subsequent startup of the management domain.</p>
 <p>Because the script overwrites the JSON file every time you run it, if you are shutting down multiple management domains, rename the file before shutting down the next domain.</p>
-<blockquote>
-<p><strong>Warning</strong></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
 <p>Although the credentials in the JSON file are encrypted, treat the content of this file as sensitive data.</p>
-</blockquote>
+</div>
 </li>
 </ol>
 
