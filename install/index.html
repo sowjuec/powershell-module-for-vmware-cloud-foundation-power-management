@@ -1127,8 +1127,8 @@
 
 
 <h1 id="installing-the-module">Installing the Module<a class="headerlink" href="#installing-the-module" title="Permanent link">&para;</a></h1>
-<p>Verify that your system has a <a href="/powershell-module-for-vmware-cloud-foundation-certificate-management/#powershell">supported edition and version</a> of PowerShell installed.</p>
-<p>Install the PowerShell <a href="/powershell-module-for-vmware-cloud-foundation-certificate-management/#module-dependencies">module dependencies</a> from the PowerShell Gallery by running the following commands:</p>
+<p>Verify that your system has a <a href="/powershell-module-for-vmware-cloud-foundation-power-management/#powershell">supported edition and version</a> of PowerShell installed.</p>
+<p>Install the PowerShell <a href="/powershell-module-for-vmware-cloud-foundation-power-management/#module-dependencies">module dependencies</a> from the PowerShell Gallery by running the following commands:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">Set-PSRepository</span> <span class="n">-Name</span> <span class="n">PSGallery</span> <span class="n">-InstallationPolicy</span> <span class="n">Trusted</span>
 <span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">VMware</span><span class="p">.</span><span class="n">PowerCLI</span> <span class="n">-MinimumVersion</span> <span class="n">13</span><span class="p">.</span><span class="n">0</span><span class="p">.</span><span class="n">0</span>
 <span class="nb">Install-Module</span> <span class="n">-Name</span> <span class="n">PowerVCF</span> <span class="n">-MinimumVersion</span> <span class="n">2</span><span class="p">.</span><span class="n">3</span><span class="p">.</span><span class="n">0</span>
@@ -1142,9 +1142,9 @@
 <span class="nb">Import-Module</span> <span class="n">-Name</span> <span class="n">PowerValidatedSolutions</span>
 <span class="nb">Import-Module</span> <span class="n">-Name</span> <span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">CertificateManagement</span>
 </code></pre></div>
-<p>Once installed, any cmdlets associated with <code>VMware.CloudFoundation.CertificateManagement</code> and the its dependencies will be available for use.</p>
+<p>Once installed, any cmdlets associated with <code>VMware.CloudFoundation.PowerManagement</code> and the its dependencies will be available for use.</p>
 <p>To view the cmdlets for available in the module, run the following command in the PowerShell console.</p>
-<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="n">-Module</span> <span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">CertificateManagement</span>
+<div class="highlight"><pre><span></span><code><span class="nb">Get-Command</span> <span class="n">-Module</span> <span class="n">VMware</span><span class="p">.</span><span class="n">CloudFoundation</span><span class="p">.</span><span class="n">PowerManagement</span>
 </code></pre></div>
 <p>To view the help for any cmdlet, run the <code>Get-Help</code> command in the PowerShell console.</p>
 <p>For example:</p>
