@@ -1183,13 +1183,10 @@
 <p>For VMware Cloud Foundation 4.5 and later, lockdown mode must be disabled on each ESXi host before shut down. You can enable lockdown mode after startup is completed.</p>
 </li>
 <li>
-<p>For VMware Cloud Foundation 4.4 and earlier:</p>
+<p>For VMware Cloud Foundation 4.4 and earlier, you must shut down the ESXi hosts manually. The scripts only place the ESXi hosts in maintenance mode.</p>
 </li>
 <li>
-<p>You must shut down the ESXi hosts manually. The scripts only place the ESXi hosts in maintenance mode.</p>
-</li>
-<li>
-<p>The SSH service on the ESXi hosts must be running.</p>
+<p>For VMware Cloud Foundation 4.4 and earlier, the SSH service on the ESXi hosts must be running.</p>
 </li>
 <li>
 <p>The sample scripts do not startup ESXi hosts. ESXi hosts must be started before running the scripts.</p>
