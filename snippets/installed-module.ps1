@@ -1,1 +1,1 @@
-Get-InstalledModule -Name VMware.CloudFoundation.CertificateManagement
+Get-InstalledModule -Name VMware.CloudFoundation.PowerManagement

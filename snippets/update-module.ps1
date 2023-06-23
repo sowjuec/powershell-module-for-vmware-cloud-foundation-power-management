@@ -1,1 +1,1 @@
-Update-Module -Name VMware.CloudFoundation.CertificateManagement
+Update-Module -Name VMware.CloudFoundation.PowerManagement
