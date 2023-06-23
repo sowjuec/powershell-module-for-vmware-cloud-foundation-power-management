@@ -18,7 +18,7 @@
         <link rel="prev" href="../update/">
       
       
-        <link rel="next" href="../knownissues/">
+        <link rel="next" href="../known-issues/">
       
       <link rel="icon" href="../favicon.ico">
       <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.16">
@@ -79,6 +79,11 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
+      
+        
+        <a href="#limitations" class="md-skip">
+          Skip to content
+        </a>
       
     </div>
     <div data-md-component="announce">
@@ -418,6 +423,8 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
+        
+      
       
       <a href="./" class="md-nav__link md-nav__link--active">
         Limitations
@@ -434,7 +441,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../knownissues/" class="md-nav__link">
+      <a href="../known-issues/" class="md-nav__link">
         Known Issues
       </a>
     </li>
@@ -1135,6 +1142,8 @@
   
   
   
+    
+  
   
 </nav>
                   </div>
@@ -1165,38 +1174,49 @@
   
 
 
-  <h1>Limitations</h1>
-
+<h1 id="limitations">Limitations<a class="headerlink" href="#limitations" title="Permanent link">&para;</a></h1>
 <ul>
 <li>
 <p>VMware Cloud Foundation on Dell EMC VxRail is not supported.</p>
 </li>
 <li>
-<p>vSphere with Tanzu, vSphere Replication, Site Recovery Manager, vRealize Suite, and Workspace ONE Access are not supported.</p>
+<p>For VMware Cloud Foundation 4.5 and later, lockdown mode must be disabled on each ESXi host before shut down. You can enable lockdown mode after startup is completed.</p>
 </li>
 <li>
-<p>For VMware Cloud Foundation 4.4 and earlier, you must shut down the ESXi hosts manually. The scripts only place the hosts in maintenance mode.</p>
+<p>For VMware Cloud Foundation 4.4 and earlier:</p>
 </li>
 <li>
-<p>ESXi hosts startup is not handled by the scripts. They should be started before running the scripts.</p>
+<p>You must shut down the ESXi hosts manually. The scripts only place the ESXi hosts in maintenance mode.</p>
+</li>
+<li>
+<p>The SSH service on the ESXi hosts must be running.</p>
+</li>
+<li>
+<p>The sample scripts do not startup ESXi hosts. ESXi hosts must be started before running the scripts.</p>
 </li>
 <li>
 <p>The sample script for management domain only works on a management domain with a single cluster.</p>
 </li>
 <li>
-<p>You must stop and start NSX Edge bare-metal nodes manually.</p>
+<p>If bare-metal NSX Edge nodes are used in your environment, you must stop and start the bare-metal NSX Edge nodes manually.</p>
 </li>
 <li>
-<p>VMware Tools running must be running in virtual machines to shut down in the management domain or in a VI workload domain using a script. The virtual machines are shut down in a random order using the "Shutdown Guest OS" command from vCenter Server.</p>
+<p>Shutdown and startup operations are not support for the following platform extensions:</p>
 </li>
 <li>
-<p>For VMware Cloud Foundation 4.4 and earlier, the SSH service on the ESXi hosts must be running.</p>
+<p>vSphere with Tanzu</p>
+</li>
+<li>vSphere Replication</li>
+<li>Site Recovery Manager</li>
+<li>Aria Suite (formerly vRealize Suite)</li>
+<li>
+<p>Workspace ONE Access</p>
 </li>
 <li>
-<p>For VMware Cloud Foundation 4.5 and newer versions the Lockdown Mode of ESXi hosts should be disabled before shut down. You can enabled it after the startup is completed.</p>
+<p>VMware Tools must be running in virtual machines to shut down virtual machines in the management or VI workload domains using the sample script. The virtual machines are shut down in a random order using the "Shutdown Guest OS" command from vCenter Server.</p>
 </li>
 <li>
-<p>Scripts cannot handle simultaneous connections to multiple services. In the script's console, all sessions to services that are not used at the moment will be disconnected.</p>
+<p>THe sample scripts cannot handle simultaneous connections to multiple services. In the script's console, all sessions to services that are not used at the moment will be disconnected.</p>
 </li>
 </ul>
 
@@ -1254,7 +1274,7 @@
         
         
           
-          <a href="../knownissues/" class="md-footer__link md-footer__link--next" aria-label="Next: Known Issues" rel="next">
+          <a href="../known-issues/" class="md-footer__link md-footer__link--next" aria-label="Next: Known Issues" rel="next">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
@@ -1369,6 +1389,10 @@
       
         
           <script src="../js/timeago_mkdocs_material.js"></script>
+        
+      
+        
+          <script src="../js/open_in_new_tab.js"></script>
         
       
     
