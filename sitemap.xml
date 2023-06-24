@@ -31,6 +31,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/</loc>
+         <lastmod>2023-06-24</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://vmware.github.io/powershell-module-for-vmware-cloud-foundation-power-management/documentation/functions/Get-DrsAutomationLevel/</loc>
          <lastmod>2023-06-24</lastmod>
          <changefreq>daily</changefreq>
